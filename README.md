@@ -1,15 +1,10 @@
-# FURNI client-only Checkout page
+# We Are Developers - Stripe Challenge
 
-This is an example of a client-only (server-free) purchase page that can be hosted on GitHub using Stripe Checkout.
+Integrate with Stripe's hosted Checkout page to accept payments with very little code.
 
-## Setup
+## How to get started
 
-- If you haven't already, create a Stripe Account: https://dashboard.stripe.com/register
-- Enable client-only checkout: https://dashboard.stripe.com/account/checkout/settings
-- Create a one-time or recurring product in the Stripe Dashboard: https://dashboard.stripe.com/products
-  - After creation click the "Use with checkout" button and copy the price ID
-  - Paste the IDs into the button `data-price-id` attributes.
-- Copy your publishable key from: https://dashboard.stripe.com/apikeys and set it as the value for `PUBLISHABLE_KEY` in the index.html file
+Fork this repo into your own GitHub account. Make sure you're set up to use GitHub Pages (you'll need the repo to be public for this to work). We've built a basic starter website for you along with the shell of a Stripe implementation. Finish the implementation and successfully submit a test purchase to win!
 
 ## Source
 
