@@ -80,7 +80,7 @@ h4 {
   padding-left: 48px;
 }
 .sr-header__logo {
-  background-image: url(../images/furni-logo.png);
+  background-image: url(../images/stripe-logo.png);
   height: 24px;
   background-size: contain;
   background-repeat: no-repeat;
@@ -352,20 +352,20 @@ pre {
   }
 }
 
-/* Furni styles – Brand-overrides, can split these out */
+/* Brand-overrides, can split these out */
 :root {
-  --accent-color: #2C475C;
+  --accent-color: #635bff;
   --headline-color: var(--accent-color);
 }
 
-.furni-image-stack {
+.stripe-image-stack {
   display: grid;
   grid-gap: 12px;
   grid-template-columns: auto auto;
 }
 
-.furni-image-stack img,
-.furni-image img {
+.stripe-image-stack img,
+.stripe-image img {
   border-radius: var(--radius);
   background-color: var(--gray-border);
   box-shadow: 0 7px 14px 0 rgba(50, 50, 93, 0.1),
@@ -374,24 +374,24 @@ pre {
   opacity: 0;
 }
 
-.furni-image {
+.stripe-image {
   text-align: center;
   margin-top: 20px;
 }
 
-.furni-image img {
+.stripe-image img {
   opacity: 1;
 }
 
-.furni-image-stack img:nth-child(1) {
+.stripe-image-stack img:nth-child(1) {
   transform: translate(30px, 15px);
   opacity: 1;
 }
-.furni-image-stack img:nth-child(2) {
+.stripe-image-stack img:nth-child(2) {
   transform: translate(-28px, 0px);
   opacity: 1;
 }
-.furni-image-stack img:nth-child(3) {
+.stripe-image-stack img:nth-child(3) {
   transform: translate(64px, -50px);
   opacity: 1;
 }
@@ -480,7 +480,7 @@ pre {
   min-width: 250px;
 }
 
-.container .furni-image-stack {
+.container .stripe-image-stack {
   margin-top: 20px;
 }
 
