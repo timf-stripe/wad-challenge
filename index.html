@@ -24,10 +24,7 @@
             <h3>Get your day going!</h3>
             <p>Feeling hungry? There's nothing like our breakfast bratwurst to get your day going fast.</p>
 
-            <button
-              data-checkout-mode="payment"
-              data-price-id="price_1KyzKID7OzBuG7X1khdZ7RSl"
-            >
+            <button>
               Get some today!
             </button>
 
@@ -68,16 +65,17 @@
 
       document.querySelectorAll('button').forEach(function (button) {
         button.addEventListener('click', function (e) {
-          var mode = e.target.dataset.checkoutMode;
-          var priceId = e.target.dataset.priceId;
-          var items = [{ price: priceId, quantity: 1 }];
+          //var mode = e.target.dataset.checkoutMode;
+          //var priceId = e.target.dataset.priceId;
+          //var items = [{ price: priceId, quantity: 1 }];
 
           // Make the call to Stripe.js to redirect to the checkout page
           // with the sku or plan ID.
+          // For your item, use price-id="price_1KyzKID7OzBuG7X1khdZ7RSl" and quantity 1
           stripe
             .redirectToCheckout({
-              mode: mode,
-              lineItems: items,
+              mode: '',
+              lineItems: '',
               successUrl:
                 DOMAIN + 'success.html?session_id={CHECKOUT_SESSION_ID}',
               cancelUrl:
