@@ -81,7 +81,7 @@ h4 {
 }
 .sr-header__logo {
   background-image: url(../images/stripe-logo.png);
-  height: 24px;
+  height: 48px;
   background-size: contain;
   background-repeat: no-repeat;
   width: 100%;
