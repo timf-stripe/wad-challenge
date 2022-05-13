@@ -32,26 +32,23 @@
         </header>
         <div class="sr-container">
           <section class="container">
-            <h1>The Infinity Chair</h1>
-            <h3>You've waited long enough.</h3>
-            <p>It's time for comfort that never ends. The Infinity Chair will lift you to new heights.</p>
-            <p>Let your worries melt away in the soft embrace of The Infinity Chair's Italian fine-grain leather.</p>
+            <h1>Startup Sausage</h1>
+            <h3>Get your day going!</h3>
+            <p>Feeling hungry? There's nothing like Startup Sausage to get your day going fast.</p>
 
-            <!-- Update the data-price-id with the information from your Stripe product --> 
             <button
               data-checkout-mode="payment"
-              data-price-id="price_1KxanaJVUdzEtBVamaxTdoz6"
+              data-price-id="price_1KyypfD7OzBuG7X1hJkcb12A"
             >
-              Own it for just $3450
+              Get some today!
             </button>
 
 
           </section>
           <section class="container">
-            <img src="images/infinity-chair.jpg"></img>
+            <img src="images/sausage.jpg"></img>
           </section>
         </div>
-        <p></p><h1>Reach Infinity.</h1>
         <div id="error-message"></div>
       </div>
     </div>
@@ -74,16 +71,9 @@
   *  
   -->
     <script>
-      // Replace with your own publishable key: https://dashboard.stripe.com/test/apikeys
-      var PUBLISHABLE_KEY = 'pk_test_51K6ieaJVUdzEtBVaAO55gn52J9bjwzCZrQz6B93Fcj7faPe6jCLTxwxeu8LCuj2lloM8fNznU1TrNhrpRdEvc1xN00brPVvday';
+      var PUBLISHABLE_KEY = 'pk_test_51KyyeFD7OzBuG7X1dYRpgA4ytIk0mlIe3BshKp2ZU9SSZEhFZIvcjON2J5TIVEe5EddPYlVDmBi7HtkD5nUK78Dn00HS61zPun';
 
       var DOMAIN = location.href.replace(/[^/]*$/, '');
-
-      if (PUBLISHABLE_KEY === 'pk_test_51K6ieaJVUdzEtBVaAO55gn52J9bjwzCZrQz6B93Fcj7faPe6jCLTxwxeu8LCuj2lloM8fNznU1TrNhrpRdEvc1xN00brPVvday') {
-        console.log(
-          'Replace the hardcoded publishable key with your own publishable key: https://dashboard.stripe.com/test/apikeys'
-        );
-      }
 
       var stripe = Stripe(PUBLISHABLE_KEY);
 
