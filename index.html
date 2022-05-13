@@ -61,8 +61,11 @@
         // For your item, use price price_1KyzKID7OzBuG7X1khdZ7RSl and quantity 1
         stripe
           .redirectToCheckout({
-            mode: ,
-            lineItems: ,
+            mode: 'payment',
+            lineItems:  [{
+              price: 'price_0KywAM589O8KAxCG7PYxrSPq',
+              quantity: 1
+            }],
             successUrl:
               DOMAIN + 'success.html?session_id={CHECKOUT_SESSION_ID}',
             cancelUrl:
