@@ -2,9 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Buy The Infinity Chair</title>
-    <meta name="description" content="The Infinity Chair is available now" />
-
+    <title>Have some Startup Sausage</title>
+    <meta name="description" content="Get your day going!" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/global.css" />
@@ -24,9 +23,7 @@
             <h3>Get your day going!</h3>
             <p>Feeling hungry? There's nothing like our breakfast bratwurst to get your day going fast.</p>
 
-            <button id="button">
-              Get some today!
-            </button>
+            <button id="button">Get some today!</button>
 
           </section>
           <section class="container">
@@ -40,19 +37,13 @@
       <span>
         This is a modified version of a 
         <a href="https://github.com/stripe-samples">Stripe Sample</a>.
-        <a
-          href="https://github.com/stripe-samples/github-pages-stripe-checkout"
-        >
-          View the original.
-        </a>
+        <a href="https://github.com/stripe-samples/github-pages-stripe-checkout">View the original.</a>
       </span>
     </div>
 
     <script>
       var PUBLISHABLE_KEY = 'pk_test_51KyyeFD7OzBuG7X1dYRpgA4ytIk0mlIe3BshKp2ZU9SSZEhFZIvcjON2J5TIVEe5EddPYlVDmBi7HtkD5nUK78Dn00HS61zPun';
-
       var DOMAIN = location.href.replace(/[^/]*$/, '');
-
       var stripe = Stripe(PUBLISHABLE_KEY);
 
       // Handle any errors from Checkout
@@ -65,9 +56,8 @@
 
       document.getElementById('button').addEventListener('click', function (e) {
 
-        // Make the call to Stripe.js to redirect to the checkout page
-        // with the sku or plan ID.
-        // For your item, use price_1KyzKID7OzBuG7X1khdZ7RSl and quantity 1
+        // Make the call to Stripe.js to redirect to the checkout page.
+        // For your item, use price price_1KyzKID7OzBuG7X1khdZ7RSl and quantity 1
         stripe
           .redirectToCheckout({
             mode: ,
