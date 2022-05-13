@@ -24,7 +24,7 @@
             <h3>Get your day going!</h3>
             <p>Feeling hungry? There's nothing like our breakfast bratwurst to get your day going fast.</p>
 
-            <button>
+            <button id="button">
               Get some today!
             </button>
 
@@ -38,8 +38,8 @@
     </div>
     <div class="banner">
       <span>
-        This is a modified version of a
-        <a href="https://github.com/stripe-samples"> Stripe Sample</a>.
+        This is a modified version of a 
+        <a href="https://github.com/stripe-samples">Stripe Sample</a>.
         <a
           href="https://github.com/stripe-samples/github-pages-stripe-checkout"
         >
@@ -63,27 +63,22 @@
         }
       };
 
-      document.querySelectorAll('button').forEach(function (button) {
-        button.addEventListener('click', function (e) {
-          //var mode = e.target.dataset.checkoutMode;
-          //var priceId = e.target.dataset.priceId;
-          //var items = [{ price: priceId, quantity: 1 }];
+      document.getElementById('button').addEventListener('click', function (e) {
 
-          // Make the call to Stripe.js to redirect to the checkout page
-          // with the sku or plan ID.
-          // For your item, use price-id="price_1KyzKID7OzBuG7X1khdZ7RSl" and quantity 1
-          stripe
-            .redirectToCheckout({
-              mode: '',
-              lineItems: '',
-              successUrl:
-                DOMAIN + 'success.html?session_id={CHECKOUT_SESSION_ID}',
-              cancelUrl:
-                DOMAIN + 'canceled.html?session_id={CHECKOUT_SESSION_ID}',
-            })
-            .then(handleResult);
+        // Make the call to Stripe.js to redirect to the checkout page
+        // with the sku or plan ID.
+        // For your item, use price_1KyzKID7OzBuG7X1khdZ7RSl and quantity 1
+        stripe
+          .redirectToCheckout({
+            mode: ,
+            lineItems: ,
+            successUrl:
+              DOMAIN + 'success.html?session_id={CHECKOUT_SESSION_ID}',
+            cancelUrl:
+              DOMAIN + 'canceled.html?session_id={CHECKOUT_SESSION_ID}',
+          })
+          .then(handleResult);
         });
-      });
     </script>
   </body>
 </html>
